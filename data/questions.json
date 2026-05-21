@@ -375,6 +375,31 @@
     "answer": "C"
   },
   {
+    "id": "1-16",
+    "chapter": 1,
+    "number": 16,
+    "question": "Chọn đáp án đúng: Trong những nhà tư tưởng sau, ai là nhà kinh tế chính trị cổ điển Anh?",
+    "options": [
+      {
+        "label": "A",
+        "text": "C. Mác"
+      },
+      {
+        "label": "B",
+        "text": "A. Smith, W. Petty, D. Ricardo"
+      },
+      {
+        "label": "C",
+        "text": "Ôoen"
+      },
+      {
+        "label": "D",
+        "text": "V.I.Lênin"
+      }
+    ],
+    "answer": "B"
+  },
+  {
     "id": "1-17",
     "chapter": 1,
     "number": 17,
@@ -625,6 +650,31 @@
     "answer": "B"
   },
   {
+    "id": "1-27",
+    "chapter": 1,
+    "number": 27,
+    "question": "Kinh tế chính trị Mác - Lênin có nhiệm vụ nghiên cứu là…",
+    "options": [
+      {
+        "label": "A",
+        "text": "Tìm ra bản chất của lực lượng sản xuất"
+      },
+      {
+        "label": "B",
+        "text": "Tìm ra bản chất của quan hệ sản xuất xã hội"
+      },
+      {
+        "label": "C",
+        "text": "Tìm ra các quy luật kinh tế và sự tác động của nó nhằm ứng dụng một cách có hiệu quả trong thực tiễn"
+      },
+      {
+        "label": "D",
+        "text": "Tìm ra các quy luật kinh tế nhằm đạt được hiệu quả kinh tế mong muốn"
+      }
+    ],
+    "answer": "B"
+  },
+  {
     "id": "1-28",
     "chapter": 1,
     "number": 28,
@@ -748,6 +798,31 @@
       }
     ],
     "answer": "A"
+  },
+  {
+    "id": "1-33",
+    "chapter": 1,
+    "number": 33,
+    "question": "Phương pháp trừu tượng hóa khoa học trong nghiên cứu kinh tế chính trị Mác - Lênin đòi hỏi?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Quá trình nghiên cứu đi từ cụ thể đến trừu tượng nêu lên những khái niệm, phạm trù, vạch ra những mối quan hệ giữa chúng, gạt bỏ những bộ phận phức tạp của đối tượng nghiên cứu"
+      },
+      {
+        "label": "B",
+        "text": "Gạt bỏ các yếu tố ngẫu nhiên, tạm thời, gián tiếp, trên cơ sở đó tách ra được những dấu hiệu điển hình, bền vững, ổn định của đối tượng nghiên cứu"
+      },
+      {
+        "label": "C",
+        "text": "Quá trình nghiên cứu cụ thể đi từ đó đến trừu tượng nêu lên những khái niệm, phạm trù, vạch ra những mối quan hệ giữa chúng và ngược lại"
+      },
+      {
+        "label": "D",
+        "text": "Quá trình nghiên cứu trừu tượng đến cụ thể, từ đó nêu lên những khái niệm, phạm trù, vạch ra những mối quan hệ giữa chúng và ngược lại"
+      }
+    ],
+    "answer": "B"
   },
   {
     "id": "2-1",
@@ -3375,6 +3450,31 @@
     "answer": "A"
   },
   {
+    "id": "2-106",
+    "chapter": 2,
+    "number": 106,
+    "question": "Chọn phương án đúng nhất: Những khuyết tật của nền kinh tế thị trường là gì?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Tiềm ẩn rủi ro khủng hoảng; phân hoá sâu sắc trong xã hội; xu hướng sử dụng hợp lí tài nguyên không thể tái tạo được"
+      },
+      {
+        "label": "B",
+        "text": "Tiềm ẩn rủi ro khủng hoảng; xu hướng cạn kiệt tài nguyên không thể tái tạo được; phân hoá sâu sắc trong xã hội"
+      },
+      {
+        "label": "C",
+        "text": "Tiềm ẩn rủi ro khủng hoảng; tạo lập sự công bằng trong xã hội; xu hướng cạn kiệt tài nguyên không thể tái tạo được"
+      },
+      {
+        "label": "D",
+        "text": "Tiềm ẩn rủi ro khủng hoảng; phân hoá sâu sắc trong xã hội; xu hướng phân bổ hợp lí tài nguyên không thể tái tạo được"
+      }
+    ],
+    "answer": "B"
+  },
+  {
     "id": "3-1",
     "chapter": 3,
     "number": 1,
@@ -5450,29 +5550,29 @@
     "answer": "D"
   },
   {
-    "id": "3-8",
+    "id": "3-84",
     "chapter": 3,
-    "number": 8,
-    "question": "Tư bản là…",
+    "number": 84,
+    "question": "Khi sản xuất hàng hoá phát triển phải có một vật ngang giá chung xuất hiện ở hình thái nào?",
     "options": [
       {
         "label": "A",
-        "text": "Tiền và máy móc thiết bị"
+        "text": "Hình thái giá trị giản đơn hay ngẫu nhiên"
       },
       {
         "label": "B",
-        "text": "Giá trị dôi ra ngoài sức lao động"
+        "text": "Hình thái mở rộng của giá trị"
       },
       {
         "label": "C",
-        "text": "Tiền có khả năng lại tăng lên"
+        "text": "Hình thái chung của giá trị"
       },
       {
         "label": "D",
-        "text": "Giá trị mang lại giá trị thặng dư bằng cách bóc lột công nhân làm thuê"
+        "text": "Hình thái tiền tệ"
       }
     ],
-    "answer": "D"
+    "answer": "C"
   },
   {
     "id": "3-85",
@@ -5848,6 +5948,31 @@
       }
     ],
     "answer": "D"
+  },
+  {
+    "id": "3-100",
+    "chapter": 3,
+    "number": 100,
+    "question": "Chọn phương án đúng nhất: Cấu thành thị trường gồm những yếu tố nào?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hàng hoá, tiền tệ, người bán"
+      },
+      {
+        "label": "B",
+        "text": "Hàng hoá, tiền tệ, người sản xuất"
+      },
+      {
+        "label": "C",
+        "text": "Hàng hoá, tiền tệ, người mua, người bán"
+      },
+      {
+        "label": "D",
+        "text": "Hàng hoá, tiền tệ, người mua, người bán, pháp luật"
+      }
+    ],
+    "answer": "C"
   },
   {
     "id": "4-1",
@@ -7325,6 +7450,31 @@
     "answer": "A"
   },
   {
+    "id": "4-60",
+    "chapter": 4,
+    "number": 60,
+    "question": "Sự ra đời của tư bản tài chính là kết quả của sự phát triển…",
+    "options": [
+      {
+        "label": "A",
+        "text": "độc quyền ngân hàng"
+      },
+      {
+        "label": "B",
+        "text": "sự phát triển của thị trường tài chính"
+      },
+      {
+        "label": "C",
+        "text": "độc quyền công nghiệp"
+      },
+      {
+        "label": "D",
+        "text": "quá trình xâm nhập liên kết giữa độc quyền ngân hàng với độc quyền công nghiệp"
+      }
+    ],
+    "answer": "D"
+  },
+  {
     "id": "5-1",
     "chapter": 5,
     "number": 1,
@@ -7975,9 +8125,84 @@
     "answer": "D"
   },
   {
+    "id": "5-27",
+    "chapter": 5,
+    "number": 27,
+    "question": "Những hình thức phân phối nào phản ánh định hướng xã hội chủ nghĩa của nền kinh tế thị trường Việt Nam?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Phân phối theo lao động và hiệu quả kinh tế, phân phối theo phúc lợi"
+      },
+      {
+        "label": "B",
+        "text": "Phân phối theo mức độ đóng góp vốn và phân phối các yếu tố sản xuất"
+      },
+      {
+        "label": "C",
+        "text": "Phân phối theo lao động, theo mức độ đóng góp vốn và phân phối theo phúc lợi"
+      },
+      {
+        "label": "D",
+        "text": "Phân phối theo quy mô vốn và hiệu quả kinh tế, phân phối theo phúc lợi"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "5-28",
+    "chapter": 5,
+    "number": 28,
+    "question": "Đặc trưng nào phản ánh thuộc tính quan trọng mang tính định hướng xã hội chủ nghĩa của nền kinh tế thị trường Việt Nam?",
+    "options": [
+      {
+        "label": "A",
+        "text": "về mục tiêu"
+      },
+      {
+        "label": "B",
+        "text": "về quan hệ gắn tăng trưởng kinh tế với công bằng xã hội"
+      },
+      {
+        "label": "C",
+        "text": "về quan hệ phân phối"
+      },
+      {
+        "label": "D",
+        "text": "về quan hệ quản lí nền kinh tế"
+      }
+    ],
+    "answer": "B"
+  },
+  {
     "id": "5-29",
     "chapter": 5,
     "number": 29,
+    "question": "Những quy tắc, luật pháp, bộ máy quản lí và cơ chế vận hành nhằm điều chỉnh các hoạt động của con người trong một chế độ xã hội là nội dung thể hiện khái niệm nào?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Thể chế"
+      },
+      {
+        "label": "B",
+        "text": "Quy luật"
+      },
+      {
+        "label": "C",
+        "text": "Nguyên tắc"
+      },
+      {
+        "label": "D",
+        "text": "Quản lí"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "5-30",
+    "chapter": 5,
+    "number": 30,
     "question": "Hệ thống quy tắc, luật pháp, bộ máy quản lí và cơ chế vận hành nhằm điều chỉnh hành vi của các chủ thể kinh tế, các hành vi sản xuất kinh doanh và các quan hệ kinh tế là nội dung thể hiện khái niệm nào?",
     "options": [
       {
@@ -7997,12 +8222,12 @@
         "text": "Thể chế chính trị"
       }
     ],
-    "answer": "A"
+    "answer": "C"
   },
   {
-    "id": "5-30",
+    "id": "5-31",
     "chapter": 5,
-    "number": 30,
+    "number": 31,
     "question": "Yếu tố nào dưới đây không phải là bộ phận cơ bản của thể chế kinh tế?",
     "options": [
       {
@@ -8022,12 +8247,12 @@
         "text": "Các cơ chế, phương pháp thực hiện, vận hành nền kinh tế"
       }
     ],
-    "answer": "C"
+    "answer": "B"
   },
   {
-    "id": "5-31",
+    "id": "5-32",
     "chapter": 5,
-    "number": 31,
+    "number": 32,
     "question": "Hệ thống đường lối, chủ trương chiến lược, hệ thống luật pháp, chính sách quy định xác lập cơ chế vận hành, điều chỉnh chức năng, hoạt động, mục tiêu, phương thức hoạt động, các quan hệ lợi ích của các tổ chức, các chủ thể kinh tế nhằm hướng tới xác lập đồng bộ các yếu tố thị trường, các loại thị trường hiện đại theo hưởng góp phần thúc đẩy dân giàu, nước mạnh, dân chủ, công bằng, văn minh là nội dung thể hiện khái niệm nào dưới đây?",
     "options": [
       {
@@ -8047,12 +8272,12 @@
         "text": "Thể chế kinh tế thị trường tư bản chủ nghĩa"
       }
     ],
-    "answer": "B"
+    "answer": "A"
   },
   {
-    "id": "5-32",
+    "id": "5-33",
     "chapter": 5,
-    "number": 32,
+    "number": 33,
     "question": "Việc hoàn thiện thể chế kinh tế thị trường định hướng xã hội chủ nghĩa xuất phát từ lí do nào dưới đây?",
     "options": [
       {
@@ -8072,12 +8297,12 @@
         "text": "Thể chế còn chưa đồng bộ, hệ thống thể chế chưa đầy đủ, kém hiệu lực"
       }
     ],
-    "answer": "A"
+    "answer": "D"
   },
   {
-    "id": "5-33",
+    "id": "5-34",
     "chapter": 5,
-    "number": 33,
+    "number": 34,
     "question": "Nội dung nào dưới đây không liên quan đến việc hoàn thiện thể chế về sở hữu trong nền kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam?",
     "options": [
       {
@@ -8100,9 +8325,9 @@
     "answer": "D"
   },
   {
-    "id": "5-34",
+    "id": "5-35",
     "chapter": 5,
-    "number": 34,
+    "number": 35,
     "question": "Việc thể chế hoá đầy đủ quyền tài sản của Nhà nước, tổ chức và cá nhân bao gồm các quyền cơ bản nào dưới đây?",
     "options": [
       {
@@ -8122,12 +8347,12 @@
         "text": "Quyền tự do, quyền sáng tạo, quyền tự quyết và hưởng lợi từ tài sản"
       }
     ],
-    "answer": "D"
+    "answer": "B"
   },
   {
-    "id": "5-35",
+    "id": "5-36",
     "chapter": 5,
-    "number": 35,
+    "number": 36,
     "question": "Nội dung nào dưới đây là SAI khi nói về việc hoàn thiện thể chế phát triển các thành phần kinh tế, các loại hình doanh nghiệp?",
     "options": [
       {
@@ -8147,12 +8372,12 @@
         "text": "Mọi doanh nghiệp thuộc các thành phần kinh tế đều hoạt động theo cơ chế thị trường"
       }
     ],
-    "answer": "B"
+    "answer": "C"
   },
   {
-    "id": "5-36",
+    "id": "5-37",
     "chapter": 5,
-    "number": 36,
+    "number": 37,
     "question": "Việc hoàn thiện thể chế kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam KHÔNG bao gồm nội dung nào dưới đây?",
     "options": [
       {
@@ -8172,12 +8397,12 @@
         "text": "Hoàn thiện thể chế, đẩy mạnh, nâng cao năng lực lãnh đạo của Đảng và hệ thống chính trị"
       }
     ],
-    "answer": "C"
+    "answer": "B"
   },
   {
-    "id": "5-37",
+    "id": "5-38",
     "chapter": 5,
-    "number": 37,
+    "number": 38,
     "question": "Việc hoàn thiện thể chế thu hút vốn đầu tư trực tiếp nước ngoài ở nước ta không được thực hiện theo hướng",
     "options": [
       {
@@ -8197,12 +8422,12 @@
         "text": "chủ động lựa chọn các dự án đầu tư nước ngoài có cam kết liên kết, hỗ trợ doanh nghiệp trong nước tham gia chuỗi giá trị toàn cầu."
       }
     ],
-    "answer": "B"
+    "answer": "C"
   },
   {
-    "id": "5-38",
+    "id": "5-39",
     "chapter": 5,
-    "number": 38,
+    "number": 39,
     "question": "Sự thoả mãn nhu cầu của con người mà sự thoả mãn nhu cầu này phải được nhận thức và đặt trong mối quan hệ xã hội ứng với trình độ phát triển nhất đinh của nền sản xuất xã hội đó là nội dung thể hiện khái niệm nào?",
     "options": [
       {
@@ -8222,12 +8447,12 @@
         "text": "Hưởng thụ"
       }
     ],
-    "answer": "C"
+    "answer": "A"
   },
   {
-    "id": "5-39",
+    "id": "5-40",
     "chapter": 5,
-    "number": 39,
+    "number": 40,
     "question": "Lợi ích vật chất đóng vai trò gì đối với hoạt động của mỗi cá nhân, tổ chức và xã hội?",
     "options": [
       {
@@ -8247,12 +8472,12 @@
         "text": "Bổ trợ"
       }
     ],
-    "answer": "A"
+    "answer": "B"
   },
   {
-    "id": "5-40",
+    "id": "5-41",
     "chapter": 5,
-    "number": 40,
+    "number": 41,
     "question": "Về bản chất, lợi ích phản ánh mục đích và động cơ của các quan hệ kinh tế giữa các chủ thể trong nền sản xuất xã hội là",
     "options": [
       {
@@ -8272,12 +8497,12 @@
         "text": "lợi ích kinh tế"
       }
     ],
-    "answer": "B"
+    "answer": "D"
   },
   {
-    "id": "5-41",
+    "id": "5-42",
     "chapter": 5,
-    "number": 41,
+    "number": 42,
     "question": "Biểu hiện lợi ích kinh tế của người lao động trước hết là yếu tố nào dưới đây?",
     "options": [
       {
@@ -8297,12 +8522,12 @@
         "text": "Trách nhiệm"
       }
     ],
-    "answer": "D"
+    "answer": "A"
   },
   {
-    "id": "5-42",
+    "id": "5-43",
     "chapter": 5,
-    "number": 42,
+    "number": 43,
     "question": "Biểu hiện lợi ích kinh tế của chủ doanh nghiệp trước hết là yếu tố nào dưới đây?",
     "options": [
       {
@@ -8322,12 +8547,12 @@
         "text": "Trách nhiệm"
       }
     ],
-    "answer": "A"
+    "answer": "B"
   },
   {
-    "id": "5-43",
+    "id": "5-44",
     "chapter": 5,
-    "number": 43,
+    "number": 44,
     "question": "Khẳng định nào dưới đây là SAI khi nói về biểu hiện của lợi ích kinh tế?",
     "options": [
       {
@@ -8347,12 +8572,12 @@
         "text": "Gắn vói các chủ thể kinh tế khác nhau là những lợi ích tương ứng"
       }
     ],
-    "answer": "B"
+    "answer": "A"
   },
   {
-    "id": "5-44",
+    "id": "5-45",
     "chapter": 5,
-    "number": 44,
+    "number": 45,
     "question": "Điểm chung của tất cả các hoạt động kinh tế trong nền kinh tế thị trường là hướng tới…",
     "options": [
       {
@@ -8375,9 +8600,9 @@
     "answer": "A"
   },
   {
-    "id": "5-45",
+    "id": "5-46",
     "chapter": 5,
-    "number": 45,
+    "number": 46,
     "question": "Khẳng định nào dưới đây là đúng khi nói về vai trò của lợi ích kinh tế đối với các chủ thể kinh tế - xã hội?",
     "options": [
       {
@@ -8397,12 +8622,12 @@
         "text": "Lợi ích kinh tế là động lực trực tiếp của các chủ thể và hoạt động kinh tế - xã hội; là cơ sở thúc đẩy sự phát triển các lợi ích khác"
       }
     ],
-    "answer": "A"
+    "answer": "D"
   },
   {
-    "id": "5-46",
+    "id": "5-47",
     "chapter": 5,
-    "number": 46,
+    "number": 47,
     "question": "Các loại thị trường cơ bản như thị trường hàng hoá, dịch vụ; thị trường vốn; thị trường công nghệ; thị trường hàng hoá sức lao động... cần phải được hoàn thiện là nội dung của việc hoàn thiện thể chế nào dưới đây?",
     "options": [
       {
@@ -8422,12 +8647,12 @@
         "text": "Thể chế phát triển các thành phần kinh tế, các loại hình doanh nghiệp"
       }
     ],
-    "answer": "D"
+    "answer": "A"
   },
   {
-    "id": "5-47",
+    "id": "5-48",
     "chapter": 5,
-    "number": 47,
+    "number": 48,
     "question": "Hình thức lợi ích nào là cơ sở thúc đẩy sự phát triển của các lợi ích khác?",
     "options": [
       {
@@ -8447,12 +8672,12 @@
         "text": "Lợi ích kinh tế"
       }
     ],
-    "answer": "A"
+    "answer": "D"
   },
   {
-    "id": "5-48",
+    "id": "5-49",
     "chapter": 5,
-    "number": 48,
+    "number": 49,
     "question": "Điền từ ngữ thích hợp vào chỗ chấm: Việc theo đuổi những lợi ích kinh tế không chính đáng, không hợp lí, không hợp pháp sẽ…",
     "options": [
       {
@@ -8472,12 +8697,12 @@
         "text": "tạo ra động lực cho sự phát triển của các doanh nghiệp"
       }
     ],
-    "answer": "D"
+    "answer": "B"
   },
   {
-    "id": "5-49",
+    "id": "5-50",
     "chapter": 5,
-    "number": 49,
+    "number": 50,
     "question": "Quan điểm của Đảng và Nhà nước ta về lợi ích kinh tế là: Coi lợi ích kinh tế là…",
     "options": [
       {
@@ -8497,12 +8722,12 @@
         "text": "nhân tố phụ thuộc hoạt động kinh tế; phải đảm bảo lợi ích doanh nghiệp chính đáng."
       }
     ],
-    "answer": "B"
+    "answer": "A"
   },
   {
-    "id": "5-50",
+    "id": "5-51",
     "chapter": 5,
-    "number": 50,
+    "number": 51,
     "question": "Sự thiết lập những tương tác giữa con người với con người, giữa các cộng đồng người, giữa các tổ chức kinh tế, giữa các bộ phận họp thành nền kinh tế, giữa con người với tổ chức kinh tế, giữa quốc gia với phần còn lại của thế giới nhằm mục tiêu xác lập các lợi ích kinh tế trong mối liên hệ với trình độ phát triển của lực lượng sản xuất và kiến trúc thượng tầng tương ứng của một giai đoạn phát triển xã hội nhất định là nội dung của khái niệm nào?",
     "options": [
       {
@@ -8522,12 +8747,12 @@
         "text": "Quan hệ lợi ích tập thể"
       }
     ],
-    "answer": "A"
+    "answer": "B"
   },
   {
-    "id": "5-51",
+    "id": "5-52",
     "chapter": 5,
-    "number": 51,
+    "number": 52,
     "question": "Quan hệ nào dưới đây KHÔNG phải là biểu hiện của quan hệ lợi ích kinh tế?",
     "options": [
       {
@@ -8547,12 +8772,12 @@
         "text": "Quan hệ giữa một quốc gia với các quốc gia khác trên thế giới"
       }
     ],
-    "answer": "B"
+    "answer": "C"
   },
   {
-    "id": "5-52",
+    "id": "5-53",
     "chapter": 5,
-    "number": 52,
+    "number": 53,
     "question": "Quan hệ lợi ích kinh tế thống nhất với nhau vì…",
     "options": [
       {
@@ -8572,12 +8797,12 @@
         "text": "một chủ thể càng thu được nhiều lợi ích kinh tế thì lợi ích của những chủ thể khác càng bị tổn hại."
       }
     ],
-    "answer": "C"
+    "answer": "A"
   },
   {
-    "id": "5-53",
+    "id": "5-54",
     "chapter": 5,
-    "number": 53,
+    "number": 54,
     "question": "Trường họp nào dưới đây KHÔNG thể hiện sự thống nhất trong quan hệ lợi ích kinh tế?",
     "options": [
       {
@@ -8597,12 +8822,12 @@
         "text": "Doanh nghiệp cải tiến kĩ thuật, nâng cao chất lượng sản phẩm, thu được nhiều lợi nhuận thì nền kinh tế, đất nước càng phát triển."
       }
     ],
-    "answer": "A"
+    "answer": "C"
   },
   {
-    "id": "5-54",
+    "id": "5-55",
     "chapter": 5,
-    "number": 54,
+    "number": 55,
     "question": "Khi nào thì quan hệ lợi ích kinh tế giữa doanh nghiệp và xã hội thống nhất với nhau?",
     "options": [
       {
@@ -8622,12 +8847,12 @@
         "text": "Doanh nghiệp xả thải gây ô nhiễm môi trường"
       }
     ],
-    "answer": "C"
+    "answer": "B"
   },
   {
-    "id": "5-55",
+    "id": "5-56",
     "chapter": 5,
-    "number": 55,
+    "number": 56,
     "question": "Khi các chủ thể kinh tế hành động theo những phương thức khác nhau để thực hiện các lợi ích của mình, sự khác nhau đó đến mức đối lập thì trở thành…",
     "options": [
       {
@@ -8650,9 +8875,9 @@
     "answer": "B"
   },
   {
-    "id": "5-56",
+    "id": "5-57",
     "chapter": 5,
-    "number": 56,
+    "number": 57,
     "question": "Vì lợi ích của mình, các cá nhân hay doanh nghiệp có thể làm hàng giả, buôn lậu, trốn thuế. Khi đó, quan hệ lợi ích của cá nhân, doanh nghiệp và lợi ích của xã hội như thế nào?",
     "options": [
       {
@@ -8672,12 +8897,12 @@
         "text": "Hợp tác với nhau"
       }
     ],
-    "answer": "B"
+    "answer": "A"
   },
   {
-    "id": "5-57",
+    "id": "5-58",
     "chapter": 5,
-    "number": 57,
+    "number": 58,
     "question": "Trong trường hợp có mâu thuẫn về quan hệ lợi ích kinh tế, khi chủ doanh nghiệp càng thu được nhiều lợi nhuận thì…",
     "options": [
       {
@@ -8697,12 +8922,12 @@
         "text": "lợi ích kinh tế của người tiêu dùng, của xã hội vẫn như cũ"
       }
     ],
-    "answer": "A"
+    "answer": "B"
   },
   {
-    "id": "5-58",
+    "id": "5-59",
     "chapter": 5,
-    "number": 58,
+    "number": 59,
     "question": "Trong các hình thức lợi ích kinh tế, lợi ích nào là cơ sở, nền tảng của các lợi ích khác?",
     "options": [
       {
@@ -8722,12 +8947,12 @@
         "text": "Lợi ích"
       }
     ],
-    "answer": "B"
+    "answer": "A"
   },
   {
-    "id": "5-59",
+    "id": "5-60",
     "chapter": 5,
-    "number": 59,
+    "number": 60,
     "question": "Các nhân tố ảnh hưởng đến quan hệ lợi ích kinh tế là",
     "options": [
       {
@@ -8750,9 +8975,9 @@
     "answer": "A"
   },
   {
-    "id": "5-60",
+    "id": "5-61",
     "chapter": 5,
-    "number": 60,
+    "number": 61,
     "question": "Yếu tố ảnh hưởng đến lợi ích kinh tế của các chủ thể sản xuất kinh doanh trên thị trường nội địa khi cạnh tranh với hàng hoá nước ngoài là…",
     "options": [
       {
@@ -8775,9 +9000,9 @@
     "answer": "A"
   },
   {
-    "id": "5-61",
+    "id": "5-62",
     "chapter": 5,
-    "number": 61,
+    "number": 62,
     "question": "Quan hệ nào dưới đây không phải là quan hệ lợi ích kinh tế cơ bản trong nền kinh tế thị trường?",
     "options": [
       {
@@ -8797,12 +9022,12 @@
         "text": "Quan hệ giữa những người lao động"
       }
     ],
-    "answer": "A"
+    "answer": "C"
   },
   {
-    "id": "5-62",
+    "id": "5-63",
     "chapter": 5,
-    "number": 62,
+    "number": 63,
     "question": "Khẳng định nào dưới đây là đúng khi nói về vai trò của lợi ích xã hội đối với lợi ích cá nhân?",
     "options": [
       {
@@ -8822,12 +9047,12 @@
         "text": "Lợi ích xã hội độc lập, tách biệt với lợi ích cá nhân và các hoạt động thực hiện lợi ích cá nhân"
       }
     ],
-    "answer": "C"
+    "answer": "A"
   },
   {
-    "id": "5-63",
+    "id": "5-64",
     "chapter": 5,
-    "number": 63,
+    "number": 64,
     "question": "Khi bán sức lao động, người lao động nhận được tiền lương (hay tiền công) và chịu sự quản lí, điều hành của người sử dụng lao động là nội dung thể hiện cho quan hệ lợi ích kinh tế nào dưới đây?",
     "options": [
       {
@@ -8850,9 +9075,9 @@
     "answer": "A"
   },
   {
-    "id": "5-64",
+    "id": "5-65",
     "chapter": 5,
-    "number": 64,
+    "number": 65,
     "question": "Lợi ích kinh tế của người sử dụng lao động thu được trong quá trình kinh doanh là…",
     "options": [
       {
@@ -8872,12 +9097,12 @@
         "text": "quy mô"
       }
     ],
-    "answer": "A"
+    "answer": "B"
   },
   {
-    "id": "5-65",
+    "id": "5-66",
     "chapter": 5,
-    "number": 65,
+    "number": 66,
     "question": "Khi bán sức lao động của mình cho người sử dụng lao động, lợi ích kinh tế của người lao động là …",
     "options": [
       {
@@ -8900,9 +9125,9 @@
     "answer": "B"
   },
   {
-    "id": "5-66",
+    "id": "5-67",
     "chapter": 5,
-    "number": 66,
+    "number": 67,
     "question": "Điều kiện quan trọng để thực hiện lợi ích kinh tế giữa người lao động và người sử dụng lao động là…",
     "options": [
       {
@@ -8925,9 +9150,9 @@
     "answer": "B"
   },
   {
-    "id": "5-67",
+    "id": "5-68",
     "chapter": 5,
-    "number": 67,
+    "number": 68,
     "question": "Vì lợi ích của mình, người sử dụng lao động luôn tìm cách cắt giảm tới mức thấp nhất các khoản chi phí, trong đó có tiền lương của người lao động để tăng lợi nhuận. Điều này làm cho quan hệ lợi ích giữa người sử đụng lao động và người lao động như thế nào?",
     "options": [
       {
@@ -8947,12 +9172,12 @@
         "text": "Đồng thuận với nhau"
       }
     ],
-    "answer": "B"
+    "answer": "A"
   },
   {
-    "id": "5-68",
+    "id": "5-69",
     "chapter": 5,
-    "number": 68,
+    "number": 69,
     "question": "Công đoàn là tổ chức quan trọng nhất bảo vệ quyền lợi của…",
     "options": [
       {
@@ -8972,12 +9197,12 @@
         "text": "công ty"
       }
     ],
-    "answer": "A"
+    "answer": "C"
   },
   {
-    "id": "5-69",
+    "id": "5-70",
     "chapter": 5,
-    "number": 69,
+    "number": 70,
     "question": "Nghiệp đoàn là tổ chức bảo vệ quyền lợi của …",
     "options": [
       {
@@ -8997,12 +9222,12 @@
         "text": "công nhân trong nhà máy"
       }
     ],
-    "answer": "C"
+    "answer": "B"
   },
   {
-    "id": "5-70",
+    "id": "5-71",
     "chapter": 5,
-    "number": 70,
+    "number": 71,
     "question": "Trong cơ chế thị trường, những người sử dụng lao động vừa là đối tác, vừa là đối thủ của nhau là sự thể hiện quan hệ lợi ích của các chủ thể nào dưới đây?",
     "options": [
       {
@@ -9025,9 +9250,9 @@
     "answer": "B"
   },
   {
-    "id": "5-71",
+    "id": "5-72",
     "chapter": 5,
-    "number": 71,
+    "number": 72,
     "question": "Nếu có nhiều người bán sức lao động, người lao động phải cạnh tranh với nhau là sự thể hiện quan hệ lợi ích giữa các chủ thể nào dưới đây?",
     "options": [
       {
@@ -9047,12 +9272,12 @@
         "text": "Quan hệ lợi ích giữa những người lao động"
       }
     ],
-    "answer": "B"
+    "answer": "D"
   },
   {
-    "id": "5-72",
+    "id": "5-73",
     "chapter": 5,
-    "number": 72,
+    "number": 73,
     "question": "Các cá nhân, tổ chức hoạt động trong cùng ngành, cùng lĩnh vực, liên kết với nhau trong hành động để thực hiện tốt hơn lợi ích riêng (lợi ích cá nhân, tổ chức) của họ hình thành nên…",
     "options": [
       {
@@ -9072,12 +9297,12 @@
         "text": "“lợi ích cá nhân”"
       }
     ],
-    "answer": "D"
+    "answer": "A"
   },
   {
-    "id": "5-73",
+    "id": "5-74",
     "chapter": 5,
-    "number": 73,
+    "number": 74,
     "question": "Các cá nhân, tổ chức hoạt động trong các ngành, lĩnh vực khác nhau nhưng có mối liên hệ với nhau, liên kết với nhau trong hành động để thực hiện tốt hơn lợi ích riêng của mình hình thành nên…",
     "options": [
       {
@@ -9097,12 +9322,12 @@
         "text": "“lợi ích nhóm”"
       }
     ],
-    "answer": "A"
+    "answer": "B"
   },
   {
-    "id": "5-74",
+    "id": "5-75",
     "chapter": 5,
-    "number": 74,
+    "number": 75,
     "question": "Các cá nhân, tổ chức nào dưới đây không phải là biểu hiện của lợi ích nhóm?",
     "options": [
       {
@@ -9125,9 +9350,9 @@
     "answer": "B"
   },
   {
-    "id": "5-75",
+    "id": "5-76",
     "chapter": 5,
-    "number": 75,
+    "number": 76,
     "question": "Các cá nhân, tổ chức nào dưới đây là biểu hiện của nhóm lợi ích?",
     "options": [
       {
@@ -9150,9 +9375,9 @@
     "answer": "B"
   },
   {
-    "id": "5-76",
+    "id": "5-77",
     "chapter": 5,
-    "number": 76,
+    "number": 77,
     "question": "Khẳng định nào dưới đây là đúng khi nói về phương thức thực hiện lợi ích kinh tế trong các quan hệ lợi ích chủ yếu của nền kinh tế thị trường định hướng xã hội chủ nghĩa?",
     "options": [
       {
@@ -9172,12 +9397,12 @@
         "text": "Thực hiện lợi ích kinh tế theo nguyên tắc thị trường; không theo chính sách của nhà nước và vai trò của các tổ chức xã hội"
       }
     ],
-    "answer": "B"
+    "answer": "A"
   },
   {
-    "id": "5-77",
+    "id": "5-78",
     "chapter": 5,
-    "number": 77,
+    "number": 78,
     "question": "Yếu tố đảm bảo sự hài hoà lợi ích kinh tế trong nền kinh tế thị trường định hướng xã hội chủ nghĩa là…",
     "options": [
       {
@@ -9197,12 +9422,12 @@
         "text": "dân cư, tập thể, người lao động"
       }
     ],
-    "answer": "A"
+    "answer": "B"
   },
   {
-    "id": "5-78",
+    "id": "5-79",
     "chapter": 5,
-    "number": 78,
+    "number": 79,
     "question": "Vai trò của nhà nước trong việc bảo đảm hài hoà các quan hệ lợi ích không thể hiện ở nội dung nào dưới đây?",
     "options": [
       {
@@ -9225,9 +9450,9 @@
     "answer": "B"
   },
   {
-    "id": "5-79",
+    "id": "5-80",
     "chapter": 5,
-    "number": 79,
+    "number": 80,
     "question": "Nguyên tắc giải quyết mâu thuẫn giữa các lợi ích kinh tế là…",
     "options": [
       {
@@ -9247,7 +9472,7 @@
         "text": "phải có sự tham gia của các bên liên quan, không nhân nhượng và đăt lợi ích của cá nhân lên trên hết."
       }
     ],
-    "answer": "B"
+    "answer": "C"
   },
   {
     "id": "6-1",
@@ -11373,5 +11598,30 @@
       }
     ],
     "answer": "C"
+  },
+  {
+    "id": "6-86",
+    "chapter": 6,
+    "number": 86,
+    "question": "Nhiệm vụ nào được coi là nhiệm vụ trọng tâm nhằm xây dựng nền kinh tế độc lập, tự chủ, xây dựng cơ sở vật chất cho chủ nghĩa xã hội, giúp Việt Nam đi tắt, đón đầu, tránh nguy cơ tụt hậu xa hơn về kinh tế so với các nước khác?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Đẩy mạnh quan hệ kinh tế đối ngoại và chủ động hội nhập kinh tế quốc tế"
+      },
+      {
+        "label": "B",
+        "text": "Đẩy mạnh công nghiệp hoá, hiện đại hoá đất nước"
+      },
+      {
+        "label": "C",
+        "text": "Kết hợp chặt chẽ kinh tế với quốc phòng, an ninh và đối ngoại trong hội nhập quốc tế"
+      },
+      {
+        "label": "D",
+        "text": "Đổi mới, hoàn thiện thể chế kinh tế, hành chính để tăng cường năng lực cạnh tranh của nền kinh tế"
+      }
+    ],
+    "answer": "B"
   }
 ]

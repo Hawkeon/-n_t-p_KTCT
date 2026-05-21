@@ -41,6 +41,7 @@
     .options { display: flex; flex-direction: column; gap: 10px; }
     .option { padding: 14px 16px; border: 1px solid #333; border-radius: 10px; cursor: pointer; transition: all 0.2s; font-size: 0.95rem; background: transparent; color: #ccc; text-align: left; }
     .option:hover:not(.disabled) { border-color: #555; background: #222; }
+    .option.selected { border-color: #ffd93d; background: rgba(255,217,61,0.12); color: #ffd93d; }
     .option.correct { border-color: #a8e6cf; background: rgba(168,230,207,0.1); color: #a8e6cf; }
     .option.wrong { border-color: #ff8b94; background: rgba(255,139,148,0.1); color: #ff8b94; }
     .option.disabled { cursor: default; }
@@ -123,6 +124,40 @@
       return a;
     }
 
+    function getChapterCount(chapter) {
+      return state.allQuestions.filter(q => q.chapter === chapter).length;
+    }
+
+    function updateQuestionCount() {
+      const total = state.allQuestions.length;
+      const current = state.filteredQuestions.length;
+      const label = state.selectedChapter === null
+        ? `${total} câu hỏi trắc nghiệm • 6 chương`
+        : `${chapterNames[state.selectedChapter]} • ${current} câu`;
+      document.getElementById('question-count').textContent = label;
+    }
+
+    function getProgressStats() {
+      const answered = state.shuffledQuestions.filter(q => state.answers[q.id] !== undefined).length;
+      const correct = state.shuffledQuestions.filter(q => state.answers[q.id] === q.answer).length;
+      return {
+        answered,
+        correct,
+        wrong: answered - correct
+      };
+    }
+
+    function renderChapterFilter() {
+      return `
+        <div class="chapter-filter">
+          <button class="chapter-btn ${state.selectedChapter === null ? 'active' : ''}" onclick="filterByChapter(null)">Tất cả (${state.allQuestions.length})</button>
+          ${[1,2,3,4,5,6].map(c => `
+            <button class="chapter-btn ${state.selectedChapter === c ? 'active' : ''}" onclick="filterByChapter(${c})" title="${chapterNames[c]}">${c} (${getChapterCount(c)})</button>
+          `).join('')}
+        </div>
+      `;
+    }
+
     async function loadQuestions() {
       try {
         const response = await fetch('data/questions.json');
@@ -131,7 +166,7 @@
         state.allQuestions = data;
         state.filteredQuestions = data;
         state.shuffledQuestions = shuffle(data);
-        document.getElementById('question-count').textContent = `${data.length} câu hỏi trắc nghiệm`;
+        updateQuestionCount();
         render();
       } catch (err) {
         document.getElementById('app').innerHTML = '<div class="error">Không thể tải câu hỏi. Vui lòng kiểm tra file data/questions.json</div>';
@@ -148,6 +183,7 @@
       state.shuffledQuestions = shuffle(state.filteredQuestions);
       state.currentIndex = 0;
       state.answers = {};
+      updateQuestionCount();
       render();
     }
 
@@ -161,12 +197,7 @@
 
       const q = state.shuffledQuestions[state.currentIndex];
       const total = state.shuffledQuestions.length;
-      const answered = Object.keys(state.answers).length;
-      const correct = Object.values(state.answers).filter((a, i) => {
-        const sq = state.shuffledQuestions[i];
-        return sq && a === sq.answer;
-      }).length;
-      const wrong = answered - correct;
+      const { answered, correct, wrong } = getProgressStats();
 
       if (state.mode === 'flash') {
         renderFlashcard(app, q, total, answered, correct, wrong);
@@ -196,12 +227,7 @@
           <button class="mode-btn" onclick="setMode('quiz')">Kiểm tra</button>
         </div>
 
-        <div class="chapter-filter">
-          <button class="chapter-btn ${state.selectedChapter === null ? 'active' : ''}" onclick="filterByChapter(null)">Tất cả</button>
-          ${[1,2,3,4,5,6].map(c => `
-            <button class="chapter-btn ${state.selectedChapter === c ? 'active' : ''}" onclick="filterByChapter(${c})">${c}</button>
-          `).join('')}
-        </div>
+        ${renderChapterFilter()}
 
         <div class="question-card">
           <div class="question-id">Câu ${q.number} - Chương ${q.chapter}</div>
@@ -248,12 +274,7 @@
           <button class="mode-btn" onclick="setMode('quiz')">Kiểm tra</button>
         </div>
 
-        <div class="chapter-filter">
-          <button class="chapter-btn ${state.selectedChapter === null ? 'active' : ''}" onclick="filterByChapter(null)">Tất cả</button>
-          ${[1,2,3,4,5,6].map(c => `
-            <button class="chapter-btn ${state.selectedChapter === c ? 'active' : ''}" onclick="filterByChapter(${c})">${c}</button>
-          `).join('')}
-        </div>
+        ${renderChapterFilter()}
 
         <div class="question-card" onclick="toggleAnswer()">
           <div class="question-id">Câu ${q.number} - Chương ${q.chapter}</div>
@@ -285,11 +306,14 @@
         renderQuizResult(app, total, correct, wrong);
         return;
       }
+      const userAnswer = state.answers[q.id];
+      const isAnswered = userAnswer !== undefined;
       app.innerHTML = `
         <div class="stats">
-          <div class="stat"><div class="stat-value total">${answered + 1}/${total}</div><div class="stat-label">Câu hỏi</div></div>
-          <div class="stat"><div class="stat-value correct">${correct}</div><div class="stat-label">Đúng</div></div>
-          <div class="stat"><div class="stat-value wrong">${wrong}</div><div class="stat-label">Sai</div></div>
+          <div class="stat"><div class="stat-value total">${state.currentIndex + 1}/${total}</div><div class="stat-label">Câu hỏi</div></div>
+          <div class="stat"><div class="stat-value total">${answered}</div><div class="stat-label">Đã chọn</div></div>
+          <div class="stat"><div class="stat-value correct">--</div><div class="stat-label">Đúng</div></div>
+          <div class="stat"><div class="stat-value wrong">--</div><div class="stat-label">Sai</div></div>
         </div>
 
         <div class="progress-bar"><div class="progress-fill" style="width:${((answered)/total)*100}%"></div></div>
@@ -300,12 +324,7 @@
           <button class="mode-btn active" onclick="setMode('quiz')">Kiểm tra</button>
         </div>
 
-        <div class="chapter-filter">
-          <button class="chapter-btn ${state.selectedChapter === null ? 'active' : ''}" onclick="filterByChapter(null)">Tất cả</button>
-          ${[1,2,3,4,5,6].map(c => `
-            <button class="chapter-btn ${state.selectedChapter === c ? 'active' : ''}" onclick="filterByChapter(${c})">${c}</button>
-          `).join('')}
-        </div>
+        ${renderChapterFilter()}
 
         <div class="question-card">
           <div class="question-id">Câu ${q.number} - Chương ${q.chapter}</div>
@@ -313,14 +332,20 @@
           <div class="options">
             ${q.options.map((opt, i) => {
               const letter = opt.label;
-              return `<button class="option" onclick="selectQuizAnswer('${letter}')">
+              const isUserChoice = userAnswer === letter;
+              let cls = 'option';
+              if (isAnswered) {
+                cls += ' disabled';
+                if (isUserChoice) cls += ' selected';
+              }
+              return `<button class="${cls}" onclick="${!isAnswered ? `selectQuizAnswer('${letter}')` : ''}">
                 <span class="option-letter">${letter}</span>${opt.text}
               </button>`;
             }).join('')}
           </div>
         </div>
 
-        ${state.selectedAnswer ? `
+        ${isAnswered ? `
         <div class="btn-group">
           <button class="btn btn-primary" onclick="nextQuestion()">Tiếp tục</button>
         </div>
@@ -334,8 +359,9 @@
     }
 
     function selectQuizAnswer(letter) {
-      state.selectedAnswer = letter;
       const q = state.shuffledQuestions[state.currentIndex];
+      if (state.answers[q.id] !== undefined) return;
+      state.selectedAnswer = letter;
       state.answers[q.id] = letter;
       if (letter !== q.answer) {
         if (!state.wrongAnswers.find(w => w.id === q.id)) {
