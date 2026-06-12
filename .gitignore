@@ -1,0 +1,12 @@
+# Claude Code project directory
+.claude/
+
+# Backup files
+*.bak
+
+# Editor temp files
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
