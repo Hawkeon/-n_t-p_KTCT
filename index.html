@@ -175,6 +175,20 @@
     }
     .bookmark-btn.bookmarked { color: var(--star-color); }
     .bookmark-btn:hover { transform: scale(1.2); }
+    .copy-btn {
+      background: none; border: none; cursor: pointer; font-size: 1rem;
+      color: var(--border); transition: color 0.2s, transform 0.2s; padding: 4px;
+      flex-shrink: 0; min-width: 32px; min-height: 32px;
+    }
+    .copy-btn:hover { color: var(--primary); transform: scale(1.15); }
+    .copy-btn.copied { color: var(--primary); }
+    .copy-toast {
+      position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
+      background: var(--primary); color: var(--primary-text); padding: 10px 24px;
+      border-radius: 20px; font-size: 0.85rem; font-weight: 600; z-index: 999;
+      opacity: 0; transition: opacity 0.25s ease; pointer-events: none;
+    }
+    .copy-toast.show { opacity: 1; }
 
     /* ===== OPTIONS ===== */
     .options { display: flex; flex-direction: column; gap: 8px; }
@@ -266,6 +280,7 @@
 </head>
 <body>
 <div class="container">
+  <div class="copy-toast" id="copy-toast">📋 Đã sao chép!</div>
   <header>
     <div>
       <h1>Kinh Tế Chính Trị Mác - Lênin</h1>
@@ -282,6 +297,7 @@
     <span><span class="kbd">←</span><span class="kbd">→</span> Trước/Sau</span>
     <span><span class="kbd">Space</span> Tiếp</span>
     <span><span class="kbd">F</span> Lật thẻ</span>
+    <span><span class="kbd">C</span> Sao chép</span>
   </div>
 
   <div id="app-chrome"></div>
@@ -538,6 +554,7 @@ function renderQuestionArea() {
 
   const q = state.shuffledQuestions[state.currentIndex];
   if (!q) { area.innerHTML = '<div class="error">Lỗi: không có câu hỏi.</div>'; return; }
+  window._currentQ = q;  // for copy button
 
   const total = state.shuffledQuestions.length;
   const isBookmarked = state.bookmarks.includes(q.id);
@@ -560,6 +577,7 @@ function renderStudy(area, q, total, isBookmarked) {
       <div class="question-header">
         <div class="question-id">Câu ${q.number} — ${chapterNames[q.chapter] || 'C'+q.chapter}</div>
         <button class="bookmark-btn ${isBookmarked ? 'bookmarked' : ''}" onclick="event.stopPropagation(); toggleBookmark('${q.id}')" title="${isBookmarked ? 'Bỏ đánh dấu' : 'Đánh dấu'}">${isBookmarked ? '★' : '☆'}</button>
+        <button class="copy-btn" onclick="event.stopPropagation(); copyQuestion(window._currentQ)" title="Sao chép câu hỏi">📋</button>
       </div>
       <div class="question-text">${escapeHtml(q.question)}</div>
       <div class="options">
@@ -588,6 +606,7 @@ function renderFlashcard(area, q, total, isBookmarked) {
     <div class="question-card">
       <div class="question-header">
         <div class="question-id">Câu ${q.number} — ${chapterNames[q.chapter] || 'C'+q.chapter}</div>
+        <button class="copy-btn" onclick="event.stopPropagation(); copyQuestion(window._currentQ)" title="Sao chép câu hỏi">📋</button>
         <button class="bookmark-btn ${isBookmarked ? 'bookmarked' : ''}" onclick="event.stopPropagation(); toggleBookmark('${q.id}')" title="${isBookmarked ? 'Bỏ đánh dấu' : 'Đánh dấu'}">${isBookmarked ? '★' : '☆'}</button>
       </div>
       <div class="question-text">${escapeHtml(q.question)}</div>
@@ -624,6 +643,7 @@ function renderQuiz(area, q, total, isBookmarked) {
     <div class="question-card">
       <div class="question-header">
         <div class="question-id">Câu ${q.number} — ${chapterNames[q.chapter] || 'C'+q.chapter}</div>
+        <button class="copy-btn" onclick="event.stopPropagation(); copyQuestion(window._currentQ)" title="Sao chép câu hỏi">📋</button>
         <button class="bookmark-btn ${isBookmarked ? 'bookmarked' : ''}" onclick="event.stopPropagation(); toggleBookmark('${q.id}')" title="${isBookmarked ? 'Bỏ đánh dấu' : 'Đánh dấu'}">${isBookmarked ? '★' : '☆'}</button>
       </div>
       <div class="question-text">${escapeHtml(q.question)}</div>
@@ -704,6 +724,30 @@ function optionClass(label, correctAnswer, userAnswer, isAnswered) {
   if (label === correctAnswer) return ' correct disabled';
   if (label === userAnswer && userAnswer !== correctAnswer) return ' wrong disabled';
   return ' disabled';
+}
+
+// ── COPY ──
+function copyQuestion(q) {
+  const lines = [
+    `[Câu ${q.number} - ${chapterNames[q.chapter] || 'Chương ' + q.chapter}]`,
+    q.question,
+    ...q.options.map(o => `${o.label}. ${o.text}`),
+  ];
+  const text = lines.join('\n');
+  navigator.clipboard.writeText(text).then(() => {
+    const toast = document.getElementById('copy-toast');
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 1800);
+  }).catch(() => {
+    // Fallback for older browsers
+    const ta = document.createElement('textarea');
+    ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+    const toast = document.getElementById('copy-toast');
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 1800);
+  });
 }
 
 // ── ACTIONS ──
@@ -926,6 +970,9 @@ document.addEventListener('keydown', function(e) {
         toggleAnswer();
       }
       break;
+    case 'c':
+      if (q && !e.ctrlKey && !e.metaKey) { copyQuestion(q); }
+      break;
   }
 });
 
@@ -1051,6 +1098,7 @@ window.reviewWrongAnswers = reviewWrongAnswers;
 window.filterByChapter = filterByChapter;
 window.filterBookmarks = filterBookmarks;
 window.loadQuestions = loadQuestions;
+window.copyQuestion = copyQuestion;
 
 // ── START ──
 if (document.readyState === 'loading') {
